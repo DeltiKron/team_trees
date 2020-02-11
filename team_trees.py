@@ -22,7 +22,7 @@ def get_count():
 if __name__ == "__main__":
     count = get_count()
     date = datetime.datetime.now()
-    print(date, count)
+    # print(date, count)
     directory = dirname(__file__)
     with open(join(directory, "team_trees_count.csv"), "a+") as outfile:
         outfile.write(f"{date},{count}\n")
